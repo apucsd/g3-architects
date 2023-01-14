@@ -169,7 +169,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .stat{
@@ -192,4 +192,47 @@
 .stat h1{
     margin: 10px 0;
     font-size: 700;
+}
+
+/* sponsor sections  */
+.sponsor-section{
+    width: 80%;
+  margin: 30px auto;
+}
+.sponsor-description{
+    width: 40%;
+    text-align: center;
+    margin: 30px auto;
+}
+.sponsor-description h1{
+    margin: 15px 0;
+}
+.sponsor-description p{
+ color: var(--p-color);
+ margin: 40px 0;
+}
+
+/* sponsors logos sections */
+.sponsor-logos{
+    display: flex;
+    gap: 80px;
+    filter: grayscale(100%);
+   
+ 
+}
+.sponsor-logos img{
+    width: 100%;
+    
+  
+ 
+}
+/* footer section  */
+footer{
+    background: #FFF4E7;
+    padding: 40px 0;
+  
+}
+footer p{
+    color: var(--p-color);
+    text-align: center;
 }
