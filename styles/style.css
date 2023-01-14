@@ -66,7 +66,7 @@
     color: white;
     border: none;
     background-color: var(--btn-color);
-    height: 64px;
+    height: 70px;
     width: 180px;
     border-radius: 8px;
     font-size: 20px;
@@ -96,7 +96,7 @@
     align-items: center;
     color: var(--p-color);
     margin: 0 auto;
-    padding: 15px;
+    padding: 60px 0;
    
 }
 .image-container{
@@ -108,4 +108,42 @@
 }
 .image-container img{
     width: 300px;
+}
+
+/* .section-2 start here  */
+.section-2{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px auto;
+}
+.section-2-description h2{
+    border-left: 2px solid var(--btn-color);
+    font-size: 40px;
+}
+.section-2-description p{
+    color: var(--p-color);
+    margin: 10px 0;
+}
+.section-2-image img{
+    width: 100%;
+
+}
+.card{
+    box-shadow: 3px 3px 8px rgb(226, 224, 224);
+    margin: 10px 0;
+    padding: 20px;
+}
+.card h3{
+    margin: 10px 0;
+}
+
+.big-btn-1{
+    position: absolute;
+    top: 85%;
+    left: 50%;
 }
