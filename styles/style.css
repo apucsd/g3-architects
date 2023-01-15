@@ -15,7 +15,8 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/* header sections */
+
+   /* --------------------------- heading section start-------------------------------------------*/ 
 .header {
     background: rgba(255, 144, 14, 0.1);
 
@@ -86,11 +87,15 @@
     width: 100%;
   
 }
+/* --------------------------- heading section end-------------------------------------------*/ 
 
-/* main sections start from here */
+
+/* --------------------------- main section start-------------------------------------------*/ 
 .main{
     width: 100%;
 }
+
+/* ==========  Section -1  ========== */
 .section-1{
     width: 75%;
     display: flex;
@@ -106,14 +111,14 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
-    /* align-items: center;
-    justify-content: center; */
+  
 }
 .image-container img{
     width: 300px;
 }
 
-/* .section-2 start here  */
+
+/* ==========  Section -2  ========== */
 .section-2{
     position: relative;
     display: grid;
@@ -125,7 +130,7 @@
     margin: 20px auto;
 }
 .section-2-description h2{
-    border-left: 2px solid var(--btn-color);
+    border-left: 5px solid var(--btn-color);
     font-size: 40px;
 }
 .section-2-description p{
@@ -147,11 +152,22 @@
 
 .big-btn-1{
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 50%;
 }
+.big-btn{
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: var(--btn-color);
+    height: 140px;
+    width: 240px;
+    border-radius: 8px;
+    padding: 20px 30px;
+    font-size: 20px;
 
-/* section 3 start here */
+}
+
+/* ==========  Section -3  ========== */
 .section-3{
     width: 80%;
     margin: 30px auto;
@@ -198,6 +214,7 @@
 }
 
 /* sponsor sections  */
+/* ==========  sponsor section  ========== */
 .sponsor-section{
     width: 80%;
   margin: 30px auto;
@@ -216,6 +233,7 @@
 }
 
 /* sponsors logos sections */
+
 .sponsor-logos{
     display: flex;
     gap: 80px;
@@ -235,8 +253,8 @@
   
  
 }
+/* ========== support section  ========== */
 
-/* support section  */
 .support-section{
     width: 80%;
     margin: 40px auto;
@@ -257,17 +275,19 @@
     display: flex;
     gap: 20px;
 }
-.suppport-box{
+.support-box{
     box-shadow:3px 3px 8px rgb(197, 192, 192);
     border-radius: 5px;
     width: 45%;
 }
-.suppport-box:hover{
+.support-box:hover{
     box-shadow:inset 3px 3px 8px rgb(197, 192, 192);
-    transform:rotate(1deg) scale(.94);
+    transform:scale(.94);
     transition: transform .5s linear;
 }
-/* footer section  */
+/* --------------------------- Main section end-------------------------------------------*/ 
+
+/* --------------------------- footer section start-------------------------------------------*/ 
 footer{
     background: #FFF4E7;
     padding: 40px 0;
@@ -277,3 +297,79 @@ footer p{
     color: var(--p-color);
     text-align: center;
 }
+/* --------------------------- footer section end-------------------------------------------*/ 
+/* media queries sections  */
+
+
+
+@media only screen and (max-width:576px) {
+     /* --------------------------- heading section -------------------------------------------*/ 
+
+    .nav-bar,.nav-bar ul ,
+    .section-1{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        gap: 20px;
+    }
+    .heading-description{
+        width: 100%;
+        padding: 15px;
+       
+    }
+    .heading-title{
+        font-size: 50px;
+        margin-top: -40px;
+    }
+
+
+     /* -----------------------------sections 1 styles -------------------------------------------*/ 
+    .section-1{
+        width: 90%;
+        
+    }
+    .image-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+   
+     /* ----------------------------- sections-2 styles--------------------------------------------*/ 
+    .section-2 {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .big-btn-1 {
+        position:static;
+        margin: 0 auto;
+    }
+     /* -----------------------------section-3 styles---------------------------------------------*/ 
+    .section-3-description{
+        width: 100%;
+    }
+    .stat-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+      /* ----------------------------- sponsor section styles---------------------------------------------*/ 
+    .sponsor-description{
+        width: 100%;
+    }
+    .sponsor-logos{
+        flex-direction: column;
+    }
+    .logo{
+        width: 60%;
+        margin: 0 auto;
+    }
+   
+  /* ----------------------------- support section styles---------------------------------------------*/ 
+  
+.support-boxs{
+        flex-direction: column;
+    }
+    .support-box {
+        width: 100%;
+    }
+
+}
+/* ----------------------------- The End---------------------------------------------*/
